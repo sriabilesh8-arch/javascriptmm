@@ -1,0 +1,32 @@
+!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Document</title>
+    </head>
+    <body>
+        <h2>Guess Game</h2>
+        <input type"number" id="num" placeholder="Enter the number"
+        <button onclick="playgame()">Guess</button>
+        <p id="feeback"></p> 
+        <p id="attempts"></p>   
+        <script>
+            let target=Math.floor(Math.random()*50)=1;
+            let count=0;
+
+            function playgame(){
+                let number=document.getElementById("num").value;
+                count++;
+                if(number<target){
+                    document.getElementById("feedback".innerText="toolow")
+                }
+                else if (number>target){
+                    document.getElementById("feedback".innerText="tooHigh")
+                }
+                else{
+                    incument.getElementById("feedback").innerText="your guess in correct"
+                    incument.getElementById("attempts").innerText="you have tried" +count;
+                }
+            }
+        </script>     
+    </body>
+</html>
